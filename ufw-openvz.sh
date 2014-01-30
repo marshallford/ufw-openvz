@@ -14,7 +14,7 @@ if [ ! -f /etc/debian_version ]
 then
 	die "Distribution is not supported"
 fi
-print_info "Fixing UFW to run on OpenVZ containers..."
+print_info "Fixing UFW to run properly on OpenVZ containers..."
 sed '/A ufw-after-input -m addrtype --dst-type BROADCAST -j ufw-skip-to-policy-input/s/^/#/' /etc/ufw/after.rules > ~/temp
 cp temp /etc/ufw/after.rules
 sed '/-A ufw-not-local -m addrtype --dst-type LOCAL -j RETURN/s/^/#/' /etc/ufw/before.rules > ~/temp

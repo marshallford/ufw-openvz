@@ -1,6 +1,6 @@
 # ufw-openvz
 
-A bash script to fix an issue with UFW and OpenVZ containers. The issue is caused by UFW not playing nice with iptables, sysctl, logging and ipv6. This script has been tested on a openVZ vps running Ubuntu 12.04 64bit.
+A bash script to fix an issue with UFW and OpenVZ containers. The issue is caused by UFW not playing nice with iptables, sysctl, logging and ipv6. This script has been tested on an openVZ vps running Ubuntu 12.04 64bit.
 
 All credit goes to...
 
